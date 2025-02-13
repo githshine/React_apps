@@ -8,6 +8,8 @@ import ProfilePicture from './ProfilePicture';
 import MyComponent from './MyComponent';
 import Counter from './Counter';
 import Input from './Input';
+import ColorPicker from './ColorPicker';
+import UseStateComponent from './UseStateComponent';
 
 function App() {
   const fruits = [
@@ -38,7 +40,9 @@ function App() {
       {/* <ProfilePicture /> */}
       {/* <MyComponent /> */}
       {/* <Counter /> */}
-      <Input></Input>
+      {/* <Input></Input> */}
+      <ColorPicker></ColorPicker>
+      <UseStateComponent></UseStateComponent>
     </>
   );
 }

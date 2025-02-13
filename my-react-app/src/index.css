@@ -108,3 +108,51 @@
 .counter-button:hover {
   background-color: hsla(202, 82%, 35%, 0.736);
 }
+
+/* set css for COlor Picker */
+/* .color-picker-container {
+  width: 50%;
+  /* set height here is no use, 
+  the container's height is up to it's child components*/
+/* height: 1000px;   */
+/* text-align: center; */
+/* margin: 0 auto; */
+/* */
+
+.color-picker-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.color-display {
+  /* width: 100%; */
+  width: 300px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 25px;
+  border: 5px solid hsl(0, 0%, 80%);
+  border-radius: 25px;
+  transition: 0.25s ease;
+}
+
+.color-display p {
+  color: hsl(0, 0%, 20%);
+  font-size: 2rem;
+  text-align: center;
+}
+label {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+input[type='color'] {
+  width: 80px;
+  height: 50px;
+  padding: 5px;
+  border-radius: 10px;
+  border: 3px solid hsl(0, 0, 80%);
+}
