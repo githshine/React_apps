@@ -86,7 +86,7 @@ function UseStateComponent_ArrayofObjects() {
     // document.getElementsByClassName('carInfo').value = ''; // 返回的是 HTML Collection，没有 value 属性，不能直接设置value
     // document.getElementById('carInfo').value = '';  // 只有 byId 可以直接设置value为空，因为只有 byId 返回的是HTML element
     setCarYear(new Date().getFullYear());
-    // setCarYear(0);
+    setCarYear(0);
     setCarMake('');
     setCarModel('');
   }
