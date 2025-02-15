@@ -12,6 +12,8 @@ import ColorPicker from './ColorPicker';
 import UseStateComponent from './UseStateComponent';
 import UseStateComponent_Array from './UseStateComponent';
 import UseStateComponent_ArrayofObjects from './UseStateComponent';
+import ToDoList from './ToDoList';
+import UseEffectComponent from './UseEffectComponent';
 
 function App() {
   const fruits = [
@@ -32,19 +34,21 @@ function App() {
 
   return (
     <>
-      <Card />
+      {/* <Card /> */}
       {/* <Button /> */}
       {/* <UserGreeting  isLoggedIn="true" userName={23} /> */}
       {/* {fruits.length > 0 && <List items={fruits} category="Fruits"/> }
     {doors.length > 0 && <List items={doors} category="Doors"/>  } */}
 
-      <Button2 />
+      {/* <Button2 /> */}
       {/* <ProfilePicture /> */}
       {/* <MyComponent /> */}
       {/* <Counter /> */}
       {/* <Input></Input> */}
       {/* <ColorPicker></ColorPicker> */}
-      <UseStateComponent_ArrayofObjects></UseStateComponent_ArrayofObjects>
+      {/* <UseStateComponent_ArrayofObjects></UseStateComponent_ArrayofObjects> */}
+      {/* <ToDoList></ToDoList> */}
+      <UseEffectComponent></UseEffectComponent>
     </>
   );
 }
