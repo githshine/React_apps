@@ -14,6 +14,7 @@ import UseStateComponent_Array from './UseStateComponent';
 import UseStateComponent_ArrayofObjects from './UseStateComponent';
 import ToDoList from './ToDoList';
 import UseEffectComponent from './UseEffectComponent';
+import DigitalClock from './DigitalClock';
 
 function App() {
   const fruits = [
@@ -48,7 +49,8 @@ function App() {
       {/* <ColorPicker></ColorPicker> */}
       {/* <UseStateComponent_ArrayofObjects></UseStateComponent_ArrayofObjects> */}
       {/* <ToDoList></ToDoList> */}
-      <UseEffectComponent></UseEffectComponent>
+      {/* <UseEffectComponent></UseEffectComponent> */}
+      <DigitalClock></DigitalClock>
     </>
   );
 }
