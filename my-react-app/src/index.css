@@ -166,11 +166,11 @@ input[type='color'] {
   text-align: center;
   margin-top: 100px;
 }
-
+/* 
 h1 {
   font-size: 4rem;
   color: white;
-}
+} */
 
 /* button {
   font-size: 1.5rem;
@@ -240,7 +240,7 @@ li {
 }
 
 /* For digital clock */
-body {
+.body {
   /* background-image: url('assets/tree.jpg'); */
   background-image: url('assets/green.jpg');
   background-repeat: no-repeat;
@@ -268,4 +268,10 @@ body {
   font-weight: bold;
   font-family: monospace;
   text-align: center;
+}
+
+/* for componentA */
+.box {
+  border: 3px solid;
+  padding: 10px;
 }
