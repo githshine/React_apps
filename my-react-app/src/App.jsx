@@ -16,6 +16,7 @@ import ToDoList from './ToDoList';
 import UseEffectComponent from './UseEffectComponent';
 import DigitalClock from './DigitalClock';
 import ComponentA from './ComponentA';
+import UseRef from './UseRef';
 
 function App() {
   const fruits = [
@@ -52,7 +53,8 @@ function App() {
       {/* <ToDoList></ToDoList> */}
       {/* <UseEffectComponent></UseEffectComponent> */}
       {/* <DigitalClock></DigitalClock> */}
-      <ComponentA></ComponentA>
+      {/* <ComponentA></ComponentA> */}
+      <UseRef></UseRef>
     </>
   );
 }
