@@ -17,6 +17,7 @@ import UseEffectComponent from './UseEffectComponent';
 import DigitalClock from './DigitalClock';
 import ComponentA from './ComponentA';
 import UseRef from './UseRef';
+import StopWatch from './StopWatch';
 
 function App() {
   const fruits = [
@@ -54,7 +55,8 @@ function App() {
       {/* <UseEffectComponent></UseEffectComponent> */}
       {/* <DigitalClock></DigitalClock> */}
       {/* <ComponentA></ComponentA> */}
-      <UseRef></UseRef>
+      {/* <UseRef></UseRef> */}
+      <StopWatch></StopWatch>
     </>
   );
 }

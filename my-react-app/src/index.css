@@ -275,3 +275,49 @@ li {
   border: 3px solid;
   padding: 10px;
 }
+
+/* for StopWatch */
+.stop-watch-container {
+  border: 2px solid black;
+  padding: 10px 5px;
+  text-align: center;
+  border-radius: 30px;
+  min-width: 580px;
+}
+
+p.timer {
+  margin: 20px 0 0;
+  font-size: 5rem;
+  font-family: monospace;
+  font-weight: bold;
+}
+button {
+  margin: 20px 10px;
+  width: 100px;
+  height: 40px;
+  border: none;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: white;
+}
+
+.start-btn {
+  background-color: hsl(120, 85%, 40%);
+}
+.start-btn:hover {
+  background-color: hsl(120, 85%, 35%);
+}
+
+.stop-btn {
+  background-color: hsl(10, 90%, 50%);
+}
+.stop-btn:hover {
+  background-color: hsl(10, 90%, 45%);
+}
+.reset-btn {
+  background-color: hsl(200, 100%, 50%);
+}
+.reset-btn:hover {
+  background-color: hsl(200, 100%, 45%);
+}
