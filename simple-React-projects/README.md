@@ -10,8 +10,12 @@ Click the enable button to support multi-selection:
 
 By default, single selection is supported:
 
-<img src="截屏2025-02-22 下午12.14.19.png" alt="single selection" width="500"/>
+<div style="text-align:center;">
+  <img src="截屏2025-02-22 下午12.14.19.png" alt="single selection" width="500"/>
+</div>
 
 Click the enable button to support multi-selection:
 
-<img src="截屏2025-02-22 下午12.14.38.png" alt="multi selections" width="400"/>
+<div style="text-align:center;">
+  <img src="截屏2025-02-22 下午12.14.38.png" alt="multi selections" width="400"/>
+</div>
