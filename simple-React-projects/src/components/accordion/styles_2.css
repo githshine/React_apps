@@ -27,4 +27,7 @@
 .content {
   color: #ffffff;
   height: auto;
+
+  /* test */
+  font-size: 1.1rem;
 }
