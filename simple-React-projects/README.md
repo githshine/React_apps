@@ -1,5 +1,7 @@
 # React + Vite
 
+This is an accordion project.
+
 By default, single selection is supported:
 ![single selection](<截屏2025-02-22 下午12.14.19.png>)
 
