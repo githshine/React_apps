@@ -26,7 +26,9 @@ function StarRating({ noOfStars = 5 }) {
     setHovingIndex(index);
   }
   function handleOnMouseLeave() {
-    setHovingIndex(endIndex);
+    // setHovingIndex(endIndex);  // this is ok, the line below is ok too
+    // Actually, I like this one, this is separated hobingIndex and endIndex, which is good. [DO not mix things together]
+    setHovingIndex(0); // because of index <= (hovingIndex || endIndex) so this's ok~
   }
 
   return (
@@ -39,7 +41,7 @@ function StarRating({ noOfStars = 5 }) {
             // className="star"
             key={index}
             className={
-              index <= (hovingIndex || endIndex) ? 'active' : 'nonActive'
+              index <= (hovingIndex || endIndex) ? 'active' : 'Inactive'
             }
             onClick={() => handleOnClick(index)}
             onMouseMove={() => handleOnMouseEnter(index)}
