@@ -5,9 +5,11 @@ import LoadMoreData from './components/load-more-data';
 import RandomColor from './components/random-color';
 import StarRating from './components/star-rating';
 import TestComponent from './components/test-component';
+import TreeView from './components/tree-view';
+import data from './components/tree-view/data';
 
 function App() {
-  const number = 10;
+  // const number = 10;
   return (
     <div id="app">
       {/* <TestComponent /> */}
@@ -15,7 +17,8 @@ function App() {
       {/* <RandomColor /> */}
       {/* <StarRating noOfStars={6} /> */}
       {/* <ImageSlider url="https://picsum.photos/v2/list?page=1" limit={10} /> */}
-      <LoadMoreData url={'https://dummyjson.com/products'} limit={20} />
+      {/* <LoadMoreData url={'https://dummyjson.com/products'} limit={20} /> */}
+      <TreeView menus={data} />
     </div>
   );
 }
