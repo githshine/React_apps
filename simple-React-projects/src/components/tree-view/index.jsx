@@ -1,7 +1,9 @@
+import MenuList from './menu-list';
+
 function TreeView({ menus = [] }) {
   return (
-    <div>
-      <p>{menus.map((menu) => console.log(menu.label))}</p>
+    <div className="tree-view-container">
+      <MenuList menuList={menus} />
     </div>
   );
 }
