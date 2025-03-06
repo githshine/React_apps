@@ -1,3 +1,7 @@
-export default function MenuItem({ item = {} }) {
-  return <div className="menu-item">{item && <p>{item.label}</p>}</div>;
+export default function MenuItem({ item = {}, onClick }) {
+  return (
+    <li className="menu-item" onClick={onClick}>
+      {item && <span>{item.label}</span>}
+    </li>
+  );
 }
