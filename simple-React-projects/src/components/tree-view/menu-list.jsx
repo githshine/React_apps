@@ -4,7 +4,7 @@ import './styles.css';
 import { useState } from 'react';
 
 export default function MenuList({ menuList = [] }) {
-  const [showChildren, setShowChildren] = useState({});
+  // const [showChildren, setShowChildren] = useState({});
 
   // // this is wrong, different parameters for base case and recursive cases
   // function recursiveMenu(menu) {
@@ -41,12 +41,12 @@ export default function MenuList({ menuList = [] }) {
     });
   }
 
-  function handleClick(index) {
-    console.log('click tree parent node, ' + index);
-    setShowChildren((s) => {
-      return { ...s, [index]: !s[index] };
-    });
-  }
+  // function handleClick(index) {
+  //   console.log('click tree parent node, ' + index);
+  //   setShowChildren((s) => {
+  //     return { ...s, [index]: !s[index] };
+  //   });
+  // }
 
   function recursiveMenu(menu) {
     if (!menu || !menu.length) return null;
@@ -58,11 +58,12 @@ export default function MenuList({ menuList = [] }) {
           menuItem.children ? 'tree-parent-with-children' : ''
         }`}
       >
-        <MenuItem item={menuItem} onClick={() => handleClick(menuItem.to)} />
-        {menuItem.children &&
+        {/* <MenuItem item={menuItem} onClick={() => handleClick(menuItem.to)} /> */}
+        <MenuItem item={menuItem} />
+        {/* {menuItem.children &&
           showChildren[menuItem.to] &&
           // <div className="children">{recursiveMenu(menuItem.children)}</div>
-          recursiveMenu(menuItem.children)}
+          recursiveMenu(menuItem.children)} */}
       </ul>
     ));
   }
@@ -70,6 +71,14 @@ export default function MenuList({ menuList = [] }) {
   return (
     // <div className="menu-list">{menuList && recursiveMenuList(menuList)}</div>
     // <div className="menu-list">{recursiveMenuList(menuList)}</div>
-    <div className="menu-list">{recursiveMenu(menuList)}</div>
+    // recursiveMenu function is good, but considering put those actions related to menu-item together, so need to change methods
+    // <div className="menu-list">{recursiveMenu(menuList)}</div>
+    <div className="menu-list-container">
+      {menuList.map((menuItem) => (
+        <ul key={menuItem.to} className={`tree-parent }`}>
+          <MenuItem item={menuItem} />
+        </ul>
+      ))}
+    </div>
   );
 }
