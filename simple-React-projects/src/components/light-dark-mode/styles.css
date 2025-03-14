@@ -1,4 +1,13 @@
-.mode-container {
+body {
+  padding: 0;
+  margin: 0;
+}
+#root {
+  margin: 0;
+  padding: 0;
+}
+
+.light-dark-mode {
   width: 100vw;
   min-height: 100vh;
   /* max-width: 100vh; */
@@ -7,6 +16,10 @@
   justify-content: center;
   align-items: center;
 }
+
+/* .mode-container {
+  width: 100%;
+} */
 
 div.light {
   background-color: #fff;
