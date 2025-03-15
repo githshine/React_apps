@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import './styles.css';
+import './theme.css';
 import { useEffect } from 'react';
 
 function LightDarkMode() {
