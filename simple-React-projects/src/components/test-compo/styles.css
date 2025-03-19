@@ -1,0 +1,11 @@
+#app {
+  width: 100vw;
+  height: 100vh;
+  background-color: aquamarine;
+}
+
+.increaseBtn {
+  width: 50%;
+  background-color: blue;
+  color: beige;
+}

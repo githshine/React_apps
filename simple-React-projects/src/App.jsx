@@ -7,6 +7,7 @@ import QRCodeGenerator from './components/qr-code-generator';
 import RandomColor from './components/random-color';
 import StarRating from './components/star-rating';
 import TeaSet from './components/test-compo';
+import MyComponent from './components/test-compo';
 import BucketList from './components/test-compo';
 import TestComponent from './components/test-component';
 import TreeView from './components/tree-view';
@@ -23,10 +24,11 @@ function App() {
       {/* <ImageSlider url="https://picsum.photos/v2/list?page=1" limit={10} /> */}
       {/* <LoadMoreData url={'https://dummyjson.com/products'} limit={20} /> */}
       {/* <TreeView menus={data} /> */}
-      {/* <QRCodeGenerator /> */}
+      <QRCodeGenerator />
       {/* <LightDarkMode /> */}
       {/* <BucketList /> */}
-      <TeaSet />
+      {/* <TeaSet /> */}
+      <MyComponent />
     </div>
   );
 }

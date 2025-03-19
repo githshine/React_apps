@@ -1,38 +1,27 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffectEvent, useEffect } from 'react';
+import './styles.css';
 
-export default function ShippingForm({ country }) {
-  const [cities, setCities] = useState(null);
-  // This Effect fetches cities for a country
-  useEffect(() => {
-    let ignore = false;
-    fetch(`/api/cities?country=${country}`)
-      .then((response) => response.json())
-      .then((json) => {
-        if (!ignore) {
-          setCities(json);
-        }
-      });
-    return () => {
-      ignore = true;
-    };
-  }, [country]);
+export default function MyComponent() {
+  const [count, setCount] = useState(0);
 
-  const [city, setCity] = useState(null);
-  const [areas, setAreas] = useState(null);
-  // This Effect fetches areas for the selected city
+  const handleClick = () => {
+    console.log('Current count:', count);
+  };
+
+  const onClick = useEffectEvent(handleClick);
+
   useEffect(() => {
-    if (city) {
-      let ignore = false;
-      fetch(`/api/areas?city=${city}`)
-        .then((response) => response.json())
-        .then((json) => {
-          if (!ignore) {
-            setAreas(json);
-          }
-        });
-      return () => {
-        ignore = true;
-      };
-    }
-  }, [city]);
+    document.addEventListener('click', onClick);
+    return () => document.removeEventListener('click', onClick);
+  }, []);
+
+  return (
+    <button
+      className="increaseBtn"
+      style={{ width: '200px', backgroundColor: 'red' }}
+      onClick={() => setCount(count + 1)}
+    >
+      Increase
+    </button>
+  );
 }
