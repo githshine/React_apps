@@ -1,4 +1,4 @@
-import { useState, useEffectEvent, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import './styles.css';
 
 export default function MyComponent() {
@@ -8,7 +8,8 @@ export default function MyComponent() {
     console.log('Current count:', count);
   };
 
-  const onClick = useEffectEvent(handleClick);
+  // const onClick = useEffectEvent(handleClick);
+  const onClick = () => {};
 
   useEffect(() => {
     document.addEventListener('click', onClick);

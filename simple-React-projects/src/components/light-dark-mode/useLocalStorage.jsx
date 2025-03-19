@@ -1,10 +1,24 @@
 import { useEffect, useState } from 'react';
 
 // Custom Hook
-function useLoalStorage({ key, value }) {
-  const [theme, setTheme] = useState({ key: value });
+function useLocalStorage(key, defaultValue) {
+  const [value, setValue] = useState(() => {
+    let currentValue;
+    try {
+      currentValue = localStorage.getItem(key) || defaultValue;
+    } catch (error) {
+      console.log(error);
+      currentValue = defaultValue;
+    }
+
+    return currentValue;
+  });
 
   useEffect(() => {
-    setTheme();
-  }, []);
+    localStorage.setItem(key, value);
+  }, [key, value]);
+
+  return [value, setValue];
 }
+
+export default useLocalStorage;

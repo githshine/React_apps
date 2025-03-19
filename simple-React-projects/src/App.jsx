@@ -24,11 +24,11 @@ function App() {
       {/* <ImageSlider url="https://picsum.photos/v2/list?page=1" limit={10} /> */}
       {/* <LoadMoreData url={'https://dummyjson.com/products'} limit={20} /> */}
       {/* <TreeView menus={data} /> */}
-      <QRCodeGenerator />
-      {/* <LightDarkMode /> */}
+      {/* <QRCodeGenerator /> */}
+      <LightDarkMode />
       {/* <BucketList /> */}
       {/* <TeaSet /> */}
-      <MyComponent />
+      {/* <MyComponent /> */}
     </div>
   );
 }
