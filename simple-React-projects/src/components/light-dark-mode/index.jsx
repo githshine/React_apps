@@ -1,6 +1,4 @@
-import { useState } from 'react';
 import './theme.css';
-import { useEffect } from 'react';
 import useLocalStorage from './useLocalStorage';
 
 function LightDarkMode() {
@@ -21,12 +19,13 @@ function LightDarkMode() {
 
   return (
     // <div className={`light-dark-mode ${mode}`}> // My solution : to many changes
-    <div className={`light-dark-mode`} data-theme={mode}>
-      <div className="mode-container"></div>
-      <h2 className={` ${mode}`}>Hello World!</h2>
-      <button className={`modeChangeBtn ${mode}`} onClick={handleModeChange}>
-        Change Mode
-      </button>
+    <div className="light-dark-mode" data-theme={mode}>
+      <div className="mode-container">
+        <h2>Hello World!</h2>
+        <button className="modeChangeBtn" onClick={handleModeChange}>
+          Change Mode
+        </button>
+      </div>
     </div>
   );
 }
