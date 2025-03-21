@@ -14,12 +14,13 @@
 } */
 
 #app {
-  margin: 0 auto;
+  margin: 0;
   text-align: center;
 }
 
 body {
   margin: 0;
+  padding: 0;
   /* display: flex; */
   /* place-items: center; */
   /* min-width: 320px; */
@@ -28,5 +29,5 @@ body {
 
 #root {
   margin: 0;
-  /* padding: 0; */
+  padding: 0;
 }

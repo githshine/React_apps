@@ -5,10 +5,10 @@ import LightDarkMode from './components/light-dark-mode';
 import LoadMoreData from './components/load-more-data';
 import QRCodeGenerator from './components/qr-code-generator';
 import RandomColor from './components/random-color';
+import ScollIndicator from './components/scoll-indicator';
 import StarRating from './components/star-rating';
-import TeaSet from './components/test-compo';
-import MyComponent from './components/test-compo';
-import BucketList from './components/test-compo';
+// import TeaSet from './components/test-compo';
+// import MyComponent from './components/test-compo';
 import TestComponent from './components/test-component';
 import TreeView from './components/tree-view';
 import data from './components/tree-view/data';
@@ -25,10 +25,12 @@ function App() {
       {/* <LoadMoreData url={'https://dummyjson.com/products'} limit={20} /> */}
       {/* <TreeView menus={data} /> */}
       {/* <QRCodeGenerator /> */}
-      <LightDarkMode />
+      {/* <LightDarkMode /> */}
       {/* <BucketList /> */}
       {/* <TeaSet /> */}
       {/* <MyComponent /> */}
+
+      <ScollIndicator url="https://dummyjson.com/products" />
     </div>
   );
 }
