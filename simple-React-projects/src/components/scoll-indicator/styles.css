@@ -1,12 +1,36 @@
 .scoll-container {
-  background-color: aquamarine;
   font-size: 20px;
   height: 100%;
+  min-height: 100vh;
+  background-color: aquamarine;
+  position: relative;
 }
 
 h2.up-title {
-  background-color: chartreuse;
+  background-color: #459a03;
 
   margin: 0;
   padding: 15px;
+}
+
+.scoll-progess {
+  height: 10px;
+  background-color: #52e81e;
+  position: sticky;
+  top: 0;
+}
+
+.scroll-progress-change {
+  background-color: blueviolet;
+  /* width: 80%; */
+  width: 0;
+  height: 100%;
+}
+
+.products-container ul {
+  list-style: none;
+}
+
+.products-container li {
+  padding: 10px;
 }
