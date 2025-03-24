@@ -1,5 +1,6 @@
 import './App.css';
 import Accordion from './components/accordion';
+import Tabs from './components/my-custom-tabs/tabs';
 import ImageSlider from './components/image-slider';
 import LightDarkMode from './components/light-dark-mode';
 import LoadMoreData from './components/load-more-data';
@@ -30,7 +31,9 @@ function App() {
       {/* <TeaSet /> */}
       {/* <MyComponent /> */}
 
-      <ScollIndicator url="https://dummyjson.com/products?limit=100" />
+      {/* <ScollIndicator url="https://dummyjson.com/products?limit=100" /> */}
+
+      <Tabs />
     </div>
   );
 }

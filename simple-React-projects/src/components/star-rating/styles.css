@@ -5,9 +5,9 @@
   justify-content: center;
 }
 
-.active {
+.star-rating .active {
   color: #fff700;
 }
-.Inactive {
+.star-rating .Inactive {
   color: black;
 }
