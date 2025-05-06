@@ -1,6 +1,7 @@
 import './App.css';
 import Accordion from './components/accordion';
-import Tabs from './components/my-custom-tabs/tabs';
+import TabsTest from './components/custom-tabs/tabs-test.jsx';
+import Tabs from './components/custom-tabs/tabs.jsx';
 import ImageSlider from './components/image-slider';
 import LightDarkMode from './components/light-dark-mode';
 import LoadMoreData from './components/load-more-data';
@@ -33,7 +34,8 @@ function App() {
 
       {/* <ScollIndicator url="https://dummyjson.com/products?limit=100" /> */}
 
-      <Tabs />
+      {/* <Tabs /> */}
+      <TabsTest />
     </div>
   );
 }

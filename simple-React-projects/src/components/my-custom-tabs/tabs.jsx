@@ -19,7 +19,7 @@ function Tabs() {
       ) {
         btnElement.classList.add('active');
 
-        console.log('Add active to the upper element');
+        console.log('Add active class to the upper element');
       } else if (btnElement.classList.contains('active'))
         btnElement.classList.remove('active');
     });
@@ -50,7 +50,7 @@ function Tabs() {
         </button>
       </div>
       <div className="tab-content">
-        <p>Welcome to the Home page 1!</p>
+        <p>Welcome to the Home page!</p>
       </div>
       <div className="tab-content" style={{ display: 'none' }}>
         <p>Welcome to the Profile page 2!</p>
