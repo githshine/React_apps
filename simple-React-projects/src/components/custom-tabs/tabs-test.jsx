@@ -11,6 +11,9 @@ function TabsTest() {
     { btnName: 'Profile', content: 'Welcome to the Profile page!' },
     // { btnName: 'Settings', content: <RandomComponent /> },
     { btnName: 'Settings', content: 'Random content' },
+    { btnName: 'Career', content: 'Find you career here.' },
+    { btnName: 'About', content: 'This is who am I.' },
+    // { btnName: 'Contact Us', content: 'You can find me here.' },
   ];
   return (
     <div>

@@ -16,3 +16,13 @@ div.tabsWrapper button {
 div.tabsWrapper button.active {
   background-color: rgb(0, 255, 174);
 }
+
+div.contentsWrapper div {
+  display: none;
+  font-size: 1.2rem;
+  margin-top: 30px;
+}
+
+div.contentsWrapper div.activeContent {
+  display: block;
+}
