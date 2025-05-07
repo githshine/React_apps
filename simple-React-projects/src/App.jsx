@@ -1,5 +1,6 @@
 import './App.css';
 import Accordion from './components/accordion';
+import ModalTest from './components/custom-modal-popup/modal-test.jsx';
 import TabsTest from './components/custom-tabs/tabs-test.jsx';
 import Tabs from './components/custom-tabs/tabs.jsx';
 import ImageSlider from './components/image-slider';
@@ -35,7 +36,9 @@ function App() {
       {/* <ScollIndicator url="https://dummyjson.com/products?limit=100" /> */}
 
       {/* <Tabs /> */}
-      <TabsTest />
+      {/* <TabsTest /> */}
+
+      <ModalTest />
     </div>
   );
 }
