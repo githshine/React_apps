@@ -1,5 +1,4 @@
 import React from 'react';
-import './modal.css';
 
 function Modal({ message, handelClose }) {
   const header = message?.header || 'Default header';

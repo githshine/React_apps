@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import ReactDOM from 'react-dom';
 import Modal from './modal';
+import './modal.css';
 
 function ModalTest() {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -25,11 +26,12 @@ function ModalTest() {
       <button onClick={handleClick}>Open Modal Popup</button>
       {/* <Modal message={modalMessage} /> */}
 
-      {isModalOpen &&
+      {/* {isModalOpen &&
         ReactDOM.createPortal(
           <Modal message={modalMessage} handelClose={closeModal} />,
           modalContainer
-        )}
+        )} */}
+      {isModalOpen && <Modal message={modalMessage} handelClose={closeModal} />}
     </div>
   );
 }
