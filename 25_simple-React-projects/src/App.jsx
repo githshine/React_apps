@@ -16,6 +16,7 @@ import StarRating from './components/star-rating';
 import TestComponent from './components/test-component';
 import TreeView from './components/tree-view';
 import data from './components/tree-view/data';
+import SearchAutoComplete from './components/search-autocomplete-with-api';
 
 function App() {
   // const number = 10;
@@ -41,7 +42,9 @@ function App() {
 
       {/* <ModalTest /> */}
 
-      <GithubProfileFinder />
+      {/* <GithubProfileFinder /> */}
+
+      <SearchAutoComplete />
     </div>
   );
 }
