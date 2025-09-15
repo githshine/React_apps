@@ -1,0 +1,19 @@
+.container {
+  display: grid;
+  grid-template-columns: 200px 300px; /* 只定义了2列 */
+  grid-template-rows: 100px; /* 只定义1行 */
+  border: 2px solid black;
+}
+.item {
+  border: 1px solid red;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 200px 300px; /* 2列 */
+  grid-auto-rows: 50px; /* 未定义的行会自动创建，高度为50px */
+  border: 2px solid black;
+}
+.item {
+  border: 1px solid red;
+}

@@ -1,0 +1,21 @@
+.github-profil-container {
+  margin: 30px 30px;
+}
+
+.github-profil-container input#username {
+  width: 300px;
+  height: 30px;
+}
+
+.github-profil-container #search-btn {
+  border: 3px solid rgba(73, 122, 212, 0.536);
+  width: 80px;
+  height: 40px;
+  cursor: pointer;
+  border-radius: 5px;
+  background-color: rgba(30, 86, 189, 0.752);
+  font-size: large;
+  font-weight: bold;
+  color: white;
+  margin: 10px 20px;
+}
