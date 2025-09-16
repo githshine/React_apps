@@ -17,6 +17,7 @@ import TestComponent from './components/test-component';
 import TreeView from './components/tree-view';
 import data from './components/tree-view/data';
 import SearchAutoComplete from './components/search-autocomplete-with-api';
+import TicTocToe from './components/tic-tac-toe/index.jsx';
 
 function App() {
   // const number = 10;
@@ -44,7 +45,9 @@ function App() {
 
       {/* <GithubProfileFinder /> */}
 
-      <SearchAutoComplete />
+      {/* <SearchAutoComplete /> */}
+
+      <TicTocToe />
     </div>
   );
 }
