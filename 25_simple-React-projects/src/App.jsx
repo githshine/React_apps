@@ -18,6 +18,8 @@ import TreeView from './components/tree-view';
 import data from './components/tree-view/data';
 import SearchAutoComplete from './components/search-autocomplete-with-api';
 import TicTocToe from './components/tic-tac-toe/index.jsx';
+import FeatureFlagGlobalState from './components/feature-flag/context/index.jsx';
+import FeatureFlags from './components/feature-flag/index.jsx';
 
 function App() {
   // const number = 10;
@@ -47,7 +49,11 @@ function App() {
 
       {/* <SearchAutoComplete /> */}
 
-      <TicTocToe />
+      {/* <TicTocToe /> */}
+
+      <FeatureFlagGlobalState>
+        <FeatureFlags />
+      </FeatureFlagGlobalState>
     </div>
   );
 }
