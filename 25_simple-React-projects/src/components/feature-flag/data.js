@@ -3,7 +3,8 @@ const dummyAPIResponse = {
   showImageSliderMode: true,
   showQRCodeGenerator: true,
   showRandomColor: true,
-  showTreeView: true,
+  showTreeView: false,
+  showTicTacToe: true,
 };
 
 function featureFlagsDateServiceCall() {

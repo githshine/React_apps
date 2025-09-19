@@ -20,6 +20,7 @@ import SearchAutoComplete from './components/search-autocomplete-with-api';
 import TicTocToe from './components/tic-tac-toe/index.jsx';
 import FeatureFlagGlobalState from './components/feature-flag/context/index.jsx';
 import FeatureFlags from './components/feature-flag/index.jsx';
+import TestFetch from './components/use-fetch/test.jsx';
 
 function App() {
   // const number = 10;
@@ -51,9 +52,11 @@ function App() {
 
       {/* <TicTocToe /> */}
 
-      <FeatureFlagGlobalState>
+      {/* <FeatureFlagGlobalState>
         <FeatureFlags />
-      </FeatureFlagGlobalState>
+      </FeatureFlagGlobalState> */}
+
+      <TestFetch />
     </div>
   );
 }

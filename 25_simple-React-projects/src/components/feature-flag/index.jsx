@@ -5,6 +5,7 @@ import QRCode from 'react-qr-code';
 import QRCodeGenerator from '../qr-code-generator';
 import RandomColor from '../random-color';
 import TreeView from '../tree-view';
+import TicTocToe from '../tic-tac-toe';
 import FeatureFlagGlobalState, { FeatureFlagsContext } from './context';
 
 const FeatureFlags = () => {
@@ -30,6 +31,10 @@ const FeatureFlags = () => {
     {
       key: 'showTreeView',
       component: <TreeView />,
+    },
+    {
+      key: 'showTicTacToe',
+      component: <TicTocToe />,
     },
   ];
 
