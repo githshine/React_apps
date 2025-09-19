@@ -21,6 +21,8 @@ import TicTocToe from './components/tic-tac-toe/index.jsx';
 import FeatureFlagGlobalState from './components/feature-flag/context/index.jsx';
 import FeatureFlags from './components/feature-flag/index.jsx';
 import TestFetch from './components/use-fetch/test.jsx';
+import UseOnclickOutsideTest from './components/use-outside-click/test.jsx';
+import UseWindowResizeTest from './components/use-window-resize/test.jsx';
 
 function App() {
   // const number = 10;
@@ -56,7 +58,11 @@ function App() {
         <FeatureFlags />
       </FeatureFlagGlobalState> */}
 
-      <TestFetch />
+      {/* <TestFetch /> */}
+
+      {/* <UseOnclickOutsideTest /> */}
+
+      <UseWindowResizeTest />
     </div>
   );
 }
