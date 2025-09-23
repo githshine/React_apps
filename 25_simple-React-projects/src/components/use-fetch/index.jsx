@@ -11,6 +11,15 @@ export default function useFetch({ url, options }) {
       setLoading(true);
       const response = await fetch(url, { ...options });
 
+      // setTimeout(() => {
+      //   console.log('Wait for 5 seconds');
+      // }, 10000);
+      async function sleep(ms) {
+        return new Promise((resolve) => setTimeout(resolve, ms));
+      }
+
+      await sleep(2000);
+
       if (!response.ok) {
         setError(response.statusText);
         setLoading(false);

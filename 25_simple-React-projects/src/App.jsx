@@ -23,6 +23,8 @@ import FeatureFlags from './components/feature-flag/index.jsx';
 import TestFetch from './components/use-fetch/test.jsx';
 import UseOnclickOutsideTest from './components/use-outside-click/test.jsx';
 import UseWindowResizeTest from './components/use-window-resize/test.jsx';
+import WindowEventsDemo from './components/use-window-resize/test02.jsx';
+import ScrollToTopAndBottom from './components/scroll-to-top-and-bottom/index.jsx';
 
 function App() {
   // const number = 10;
@@ -62,7 +64,10 @@ function App() {
 
       {/* <UseOnclickOutsideTest /> */}
 
-      <UseWindowResizeTest />
+      {/* <UseWindowResizeTest /> */}
+      {/* <WindowEventsDemo /> */}
+
+      <ScrollToTopAndBottom />
     </div>
   );
 }
