@@ -16,8 +16,7 @@ const Weather = () => {
 
       setLoading(true);
       const response = await fetch(
-        // `https://api.openweathermap.org/data/2.5/weather?q=${param}&appid=edd19028acb5c463d52db06fbb15ddd8`
-        `https://api.openweathermap.org/data/2.5/weather?q=${param}&appid=e34b4c51d8c2b7bf48d5217fe52ff79e`
+        `https://api.openweathermap.org/data/2.5/weather?q=${param}&appid=edd19028acb5c463d52db06fbb15ddd8`
       );
 
       console.log('response:', response);
