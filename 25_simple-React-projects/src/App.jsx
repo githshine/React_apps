@@ -25,6 +25,7 @@ import UseOnclickOutsideTest from './components/use-outside-click/test.jsx';
 import UseWindowResizeTest from './components/use-window-resize/test.jsx';
 import WindowEventsDemo from './components/use-window-resize/test02.jsx';
 import ScrollToTopAndBottom from './components/scroll-to-top-and-bottom/index.jsx';
+import ScrollToSection from './components/scroll-to-top-and-bottom/scroll-to-section.jsx';
 
 function App() {
   // const number = 10;
@@ -67,7 +68,9 @@ function App() {
       {/* <UseWindowResizeTest /> */}
       {/* <WindowEventsDemo /> */}
 
-      <ScrollToTopAndBottom />
+      {/* <ScrollToTopAndBottom /> */}
+
+      <ScrollToSection />
     </div>
   );
 }
