@@ -39,7 +39,7 @@ const Details = () => {
     <div>
       {recipeDetails && (
         <div className="flex gap-5">
-          <div className=" h-90 w-1/2 justify-center items-center  overflow-hidden items-center rounded-xl">
+          <div className="  w-2/5 justify-center items-center  overflow-hidden items-center rounded-xl">
             <img
               src={recipeDetails?.image_url}
               alt="recipe img"
