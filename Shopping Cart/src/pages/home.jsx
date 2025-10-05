@@ -5,6 +5,7 @@ import ProductTile from '../components/product-tile';
 const Home = () => {
   const [productsList, setProductsList] = useState([]);
   const [loading, setLoading] = useState(false);
+  const [cartDic, setCartDic] = useState({});
 
   async function fetchProductsList() {
     try {
@@ -32,6 +33,23 @@ const Home = () => {
     fetchProductsList();
   }, []);
 
+  function handleAddToCart(product) {
+    console.log('handel add to cart:', product);
+    const copyCartDic = { ...cartDic };
+    // copyCartList.findIndex(item => item.id === product.id)
+    // 不能用Map 来存储object key，然后后期进行比较：因为这样的话，必须保证每次使用的object key 都是同一个实例 instance。 做不到！
+    // if (copyCartMap.has(product))
+    //   copyCartMap.set(product, copyCartMap.get(product) + 1);
+    // else copyCartMap.set(product, 1);
+
+    if (product.id in copyCartDic) copyCartDic[product.id]++;
+    else copyCartDic[product.id] = 1;
+
+    setCartDic(copyCartDic);
+
+    console.log('copyCartDic:', copyCartDic);
+  }
+
   return (
     <div>
       {loading ? (
@@ -48,7 +66,10 @@ const Home = () => {
           {productsList &&
             productsList.length > 0 &&
             productsList.map((productItem) => (
-              <ProductTile product={productItem} />
+              <ProductTile
+                product={productItem}
+                handleAddToCart={() => handleAddToCart(productItem)}
+              />
             ))}
         </div>
       )}

@@ -1,7 +1,7 @@
 import React from 'react';
 
-const ProductTile = ({ product }) => {
-  console.log('product:', product);
+const ProductTile = ({ product, handleAddToCart }) => {
+  // console.log('product:', product);
 
   return (
     <div>
@@ -14,11 +14,18 @@ const ProductTile = ({ product }) => {
           ></img>
         </div>
         <div>
-          <h2 className="w-40 truncate">{product.title}</h2>
+          <h2 className="w-40 truncate mt-3 text-gray-700 font-bold text-lg">
+            {product.title}
+          </h2>
         </div>
-        <button className="uppercase bg-black text-white/90 rounded-lg p-3">
-          Add to Cart
-        </button>
+        <div className="flex items-center justify-center w-full mt-5">
+          <button
+            className="uppercase bg-red-900 text-white border-2 rounded-lg font-bold p-3 cursor-pointer"
+            onClick={handleAddToCart}
+          >
+            Add to Cart
+          </button>
+        </div>
       </div>
     </div>
   );
