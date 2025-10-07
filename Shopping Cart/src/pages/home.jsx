@@ -68,7 +68,7 @@ const Home = () => {
             productsList.map((productItem) => (
               <ProductTile
                 product={productItem}
-                handleAddToCart={() => handleAddToCart(productItem)}
+                // handleAddToCart={() => handleAddToCart(productItem)}
               />
             ))}
         </div>
