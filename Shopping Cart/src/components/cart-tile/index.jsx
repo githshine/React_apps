@@ -8,9 +8,13 @@ const CartTile = ({ cart }) => {
     dispatch(removeFromCart(cart?.id));
   }
   return (
-    <div className="border-2 rounded-xl border-red-800 mt-2 p-3 flex justify-center gap-4">
-      <div>
-        <img src={cart?.image} alt={cart?.title} className="w-55"></img>
+    <div className="max-w-full max-h-full  border-2 rounded-xl border-red-800 mt-2 p-3 flex justify-center gap-4">
+      <div className="w-[300px] h-[300px] overflow-hidden">
+        <img
+          src={cart?.image}
+          alt={cart?.title}
+          className="w-full h-full object-contain"
+        ></img>
       </div>
       <div>
         <h2

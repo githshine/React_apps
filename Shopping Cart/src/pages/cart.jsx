@@ -19,9 +19,9 @@ const Cart = () => {
       {cart && cart.length ? (
         <>
           <div className="flex justify-evenly min-h-[85vh] gap-10">
-            <div className="max-w-3/5 max-h-[80vh] overflow-auto flex flex-col justify-center items-center border-2 border-amber-100 bg-amber-100/30 rounded-lg p-2">
+            <div className="max-w-4/5 max-h-[80vh] overflow-y-auto flex flex-col  items-center border-2 border-amber-100 bg-amber-100/30 rounded-lg p-2">
               {cart.map((it) => (
-                <CartTile cart={it} />
+                <CartTile key={it?.id} cart={it} />
               ))}
             </div>
             <div className="flex flex-col items-start p-3 ml-6">
