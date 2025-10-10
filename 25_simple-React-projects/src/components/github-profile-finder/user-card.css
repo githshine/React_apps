@@ -1,0 +1,23 @@
+.userCard-container {
+  border: 2px solid gray;
+  width: 80%;
+  height: 300px;
+  margin: 20px auto;
+}
+
+.userCard-container .userIntro {
+  display: flex;
+  /* text-align: center; */
+  align-items: center;
+  justify-content: center;
+}
+
+.userCard-container .userIntro img {
+  width: 60px;
+  padding: 20px 50px;
+  /* margin: 0 40px; */
+}
+
+.info .info-header {
+  font-weight: bold;
+}

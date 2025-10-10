@@ -1,0 +1,73 @@
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+#drum-machine {
+  width: 80%;
+  display: flex;
+  justify-content: space-evenly;
+  border: 3px solid hsl(34, 100%, 65%);
+  padding: 20px 10px;
+  text-align: center;
+  margin: 50px auto;
+}
+
+#drum-pad-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 三列，每列占用均等空间 */
+  grid-template-rows: repeat(3, 1fr); /* 三行，每行占用均等空间 */
+  gap: 10px; /* 网格项之间的间距，根据需要设置 */
+}
+
+#control-panel {
+  /* display: flex;
+  flex-direction: column; */
+  flex: 1;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  border-radius: 34px;
+  transition: 0.4s;
+}
+
+.slider::before {
+  position: absolute;
+  content: '';
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  border-radius: 50%;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: #4caf50;
+}
+
+input:checked + .slider::before {
+  transform: translateX(26px);
+}

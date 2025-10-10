@@ -1,0 +1,100 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  text-align: center;
+  margin: 50px auto 0px;
+  width: 90%;
+  height: 470px;
+  max-width: 700px;
+  border-radius: 20px;
+  padding: 20px 15px;
+  background: rgb(0, 255, 166);
+}
+
+.loading {
+  font-size: 50px;
+  font-weight: bold;
+  color: black;
+}
+
+div.search-engine {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+div.search-engine input {
+  height: 40px;
+  width: 60%;
+  margin: 15px 15px;
+  padding: 2px 5px;
+  font-size: 16px;
+  border: 1px solid;
+  border-radius: 6px;
+  outline: none;
+  background-color: #fff;
+  color: #555;
+}
+
+div.search-engine button {
+  padding: 11px 15px;
+  font-size: 18px;
+  border: 1px solid black;
+  border-radius: 6px;
+  cursor: pointer;
+  background-color: black;
+  color: #fff;
+}
+
+.loadingError {
+  font-size: 25px;
+  font-weight: 600;
+  margin: 30px 0 0;
+}
+div.weather-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.weather-card .date {
+  font-style: italic;
+  color: rgb(230, 152, 50);
+  font-weight: 400;
+  font-size: 18px;
+  margin: 10px 0 10px;
+}
+
+.weather-card h2#city {
+  margin: 10px 0 0;
+  font-size: 28px;
+}
+
+.weather-card .temp {
+  font-size: 80px;
+  font-weight: 500;
+  margin: 0px;
+}
+
+div#weather {
+  font-weight: 500;
+  font-size: 18px;
+}
+
+div.weather-card .weather-info {
+  width: 80%;
+  font-size: 18px;
+  font-weight: 600;
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 20px;
+}
+
+div.weather-card .weather-info p {
+  margin: 5px;
+}

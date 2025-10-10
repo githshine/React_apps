@@ -1,0 +1,323 @@
+.card {
+  border: 1px solid rgb(196, 196, 196);
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px #00000023;
+  padding: 20px;
+  margin: 10px;
+  text-align: center;
+  max-width: 250px;
+  display: inline-block;
+}
+
+.card .card-image {
+  width: 60%;
+  height: auto;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.card .card-title {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  color: hsl(0, 0%, 20%);
+}
+
+.card .card-text {
+  font-family: Arial, sans-serif;
+  color: hsl(0, 0%, 30%);
+}
+
+.student {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2em;
+  padding: 10px;
+  border: 1px solid hsla(0, 0%, 50%, 0.8);
+}
+
+.student p {
+  margin: 0;
+}
+
+.welcome-message {
+  font-size: 2.5em;
+  font-family: Arial, Helvetica, sans-serif;
+  border-radius: 5px;
+  padding: 10px;
+  border: 1px solid none;
+  background-color: hsla(126, 91%, 34%, 0.821);
+  color: white;
+}
+
+.login-prompt {
+  font-size: 2.5em;
+  font-family: Arial, Helvetica, sans-serif;
+  border-radius: 5px;
+  padding: 10px;
+  border: 1px solid none;
+  background-color: hsla(0, 91%, 34%, 0.821);
+  color: white;
+}
+
+.list-category {
+  font-size: 2.5em;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: hsl(0, 0%, 20%);
+  text-align: center;
+  border: 3px solid;
+  border-radius: 5px;
+  background-color: hsl(185, 100%, 50%);
+}
+
+.list-items li {
+  font-size: 2em;
+  list-style: none;
+  color: hsl(0, 0%, 25%);
+  margin: 0;
+}
+
+.list-items li:hover {
+  color: hsl(0, 0%, 45%);
+  cursor: pointer;
+}
+
+.counter-container {
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.counter-display {
+  font-size: 8em;
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+
+.counter-button {
+  width: 150px;
+  height: 50px;
+  font-size: 1.5em;
+  font-weight: bold;
+  background-color: hsla(202, 82%, 49%, 0.814);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.counter-button:hover {
+  background-color: hsla(202, 82%, 35%, 0.736);
+}
+
+/* set css for COlor Picker */
+/* .color-picker-container {
+  width: 50%;
+  /* set height here is no use, 
+  the container's height is up to it's child components*/
+/* height: 1000px;   */
+/* text-align: center; */
+/* margin: 0 auto; */
+/* */
+
+.color-picker-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.color-display {
+  /* width: 100%; */
+  width: 300px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 25px;
+  border: 5px solid hsl(0, 0%, 80%);
+  border-radius: 25px;
+  transition: 0.25s ease;
+}
+
+.color-display p {
+  color: hsl(0, 0%, 20%);
+  font-size: 2rem;
+  text-align: center;
+}
+label {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+input[type='color'] {
+  width: 80px;
+  height: 50px;
+  padding: 5px;
+  border-radius: 10px;
+  border: 3px solid hsl(0, 0, 80%);
+}
+
+/* body {
+  background-color: hsl(0, 0%, 10%);
+} */
+
+.to-do-list {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  margin-top: 100px;
+}
+/* 
+h1 {
+  font-size: 4rem;
+  color: white;
+} */
+
+/* button {
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 10px 20px;
+  color: white;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.5s ease;
+} */
+
+.add-button {
+  background-color: hsl(125, 47%, 54%);
+}
+
+.add-button:hover {
+  background-color: hsl(125, 47%, 44%);
+}
+.delete-button {
+  background-color: hsl(10, 90%, 50%);
+}
+
+.delete-button:hover {
+  background-color: hsl(10, 90%, 40%);
+}
+
+.move-button {
+  background-color: hsl(207, 90%, 64%);
+}
+.move-button:hover {
+  background-color: hsl(207, 90%, 54%);
+}
+
+input[type='text'] {
+  font-size: 1.6rem;
+  padding: 10px;
+  border: 2px solid hsla(0, 0%, 80%, 0.5);
+  border-radius: 5px;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+ol {
+  padding: 0;
+}
+li {
+  font-size: 2rem;
+  font-weight: bold;
+  background-color: hsla(0, 0%, 95%);
+  border: 3px solid hsla(0, 0%, 85%, 0.75);
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.text {
+  flex: 1;
+}
+
+.delete-button,
+.move-button {
+  padding: 8px 12px;
+  font-size: 1.4rem;
+  margin-left: 10px;
+}
+
+/* For digital clock */
+.body {
+  /* background-image: url('assets/tree.jpg'); */
+  background-image: url('assets/green.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  margin: 0;
+
+  /* to make the clock center both horizontally and vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.clock-container {
+  backdrop-filter: blur(5px);
+  width: 100vw;
+  padding: 10px 0;
+}
+
+.clock {
+  color: white;
+  font-size: 6rem;
+  font-weight: bold;
+  font-family: monospace;
+  text-align: center;
+}
+
+/* for componentA */
+.box {
+  border: 3px solid;
+  padding: 10px;
+}
+
+/* for StopWatch */
+.stop-watch-container {
+  border: 2px solid black;
+  padding: 10px 5px;
+  text-align: center;
+  border-radius: 30px;
+  min-width: 580px;
+}
+
+p.timer {
+  margin: 20px 0 0;
+  font-size: 5rem;
+  font-family: monospace;
+  font-weight: bold;
+}
+button {
+  margin: 20px 10px;
+  width: 100px;
+  height: 40px;
+  border: none;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: white;
+}
+
+.start-btn {
+  background-color: hsl(120, 85%, 40%);
+}
+.start-btn:hover {
+  background-color: hsl(120, 85%, 35%);
+}
+
+.stop-btn {
+  background-color: hsl(10, 90%, 50%);
+}
+.stop-btn:hover {
+  background-color: hsl(10, 90%, 45%);
+}
+.reset-btn {
+  background-color: hsl(200, 100%, 50%);
+}
+.reset-btn:hover {
+  background-color: hsl(200, 100%, 45%);
+}
